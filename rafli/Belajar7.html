@@ -13,7 +13,7 @@
         body
         {
             background-color: blanchedalmond;
-            font-family: Georgia, Times, 'Times New Roman', serif;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
         }
         nav
@@ -60,15 +60,11 @@
         }
         header, p
         {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
-        header, h2
-        {
-            margin-top: 10px;
-        }
+       
         article > p
         {
-            margin-top: 5px;
             text-align: center;
         }
         img
@@ -81,6 +77,7 @@
         footer
         {
             text-align: center;
+            padding-top: 8px;
         }
         article
         {
@@ -93,25 +90,29 @@
         div
         {
             max-width: 600px; 
-            margin: 3em auto;
+            margin: 1em auto;
             border: 3;
+        }
+        .me
+        {
+            justify-content: center;
+            margin-top:5px;
+            text-align: justify;
+        }
+        table > tr > th
+        {
+            width: 100%;
+            display: flex;
         }
         table
         {
-            width: 100%;
+           margin: 0 auto;
         }
-       .tombol
-       {
-           border: 3px solid black;
-           padding: 10px;
-           border-radius: 10px;
-           background-color: red;
-           color: white;
-           font-weight: bold;
-           text-decoration: none;
+        header > h2
+        {
+            margin-top: 10px;
+        }
 
-       }
-        
     </style>
 </head>
 
@@ -133,31 +134,29 @@
     </header>
 
     <hr />
-
     <article>
         <h2> About Me</h2>
-        <p>
-            Perkenalkan saya adalah lulusan Cisco Accademy. Saya berpengalaman dalam riset teknologi, serta saya aktif dalam kegiatan Badan Riset Nasional Indonesia Bidang Teknologi Informasi ( Bidang Vokasi Terapan).
-        </p>
+        <div class="me">
+            <p>Saya Lulusan Cisco Academy Tahun 2020. Saya berpengalaman dalam riset teknologi, serta saya aktif dalam kegiatan Badan Riset Nasional Indonesia Bidang Teknologi Informasi ( Bidang Vokasi Terapan).</p>
+        </div>
         <br>
     </article>
-
     <div>
-        <table border="3">
+        <table border="1">
             <thead>
                 <tr>
-                    <th>Skill</th>
-                    <th>Pengalaman</th>
+                    <th>Keterampilan</th>
+                    <th>Skill-Bar</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>
                         <ul>
-                            <li> Riset Teknologi Informasi Humanity And Progress.</li>
-                            <li> Website Development And Software Solution.</li>
-                            <li> Pembangunan dan Perakitan Jaringan Perusahaan. </li>
-                            <li> Pengujian System Keamanan Jaringan.</li>
+                            <li> Riset Teknologi Informasi.</li>
+                            <li> Website Development.</li>
+                            <li> Perakitan Jaringan Perusahaan. </li>
+                            <li> Pengujian System Jaringan.</li>
                             <li> Software Bussiness Marketing.</li>
                             <li> Network Bussiness Marketing.</li>
                             <li> Inovasi Sistem Digital.</li>
@@ -166,16 +165,15 @@
                     </td>
                     <td>
                         <ul>
-                            <li> Pendidikan Cisco Accademy Tahun 2020 ( IT Essential ).</li>
-                            <li> Pendidikan Linux Professional Institut Tahun 2020 ( Dasar Linux ).</li>
-                            <li> Riset Internasional Teknologi Informasi, Harvard University Tahun 2020 ( IT Screening Havard Campusses ).</li>
-                            <li> Pengembangan Kurikulum Pembelajaran Bidang Teknologi Informasi Tahun 2020, Southeast Asian Ministers of Education Organization. </li>
-                            <li> Peserta Ide Terbaik ITS Bidang Internet Of Things Tahun 2020.</li>
-                            <li> Workshop Vokasi Jawa Timur Tahun 2021, Dinas Pendidikan Jawa Timur, Jakarta 2021 ( IT Bussiness Solution ).</li>
-                            <li> Workshop Vokasi Jawa Timur Tahun 2021, Dinas Pendidikan Jawa Timur, Jakarta 2021 ( Mechatronic System ).</li>
-                            <li> Riset Pembangunan Konsep Kota Digital Indonesia Wilayah Sukabumi, Jabar 2021, US Consulate Surabaya.</li>
-                            <li> Pengembangan Bot Detector "National Inovation Project" Tahun 2021.</li>
-                            <li> Pelatihan Artificial Intelligence Intel Prakasa Muda 2021</li>
+                            <li>HTMl Dasar 35%.</li>
+                            <li>Selector Css 21%. </li>
+                            <li>Css Dasar 14%.</li>
+                            <li>Css Flex 25%.</li>
+                            <li>Path And Image 10%.</li>
+                            <li>Posiiton 13%.</li>
+                            <li>Pseudo Class 8%.</li>
+                            <li>Media Querys 31%.</li>
+                            <li>Sizing 5%.</li>
                         </ul>
                     </td>
                 </tr>
@@ -183,7 +181,7 @@
         </table>
         <br>
         <b><p>NB : Data diatas dapat dipertanggung jawabkan.</p></b>
-        <a class="tombol" href="../index.html">Click !</a>
+        
     </div>
 
     <hr>
