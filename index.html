@@ -11,7 +11,9 @@
       padding: 0;
     }
     .wrapper{
-      display: flex;      
+      display: flex; 
+      justify-content: center;
+      align-content: center;     
       min-height: 100vh;
     }
     .wrapper > div{
@@ -21,18 +23,28 @@
 
     /* Rafli start */
       .rafli{
+        display: flex;
+        justify-content: center;
         background-color: brown;
       }
-      .tombol
-       {
-           border: 3px solid black;
-           padding: 10px;
-           border-radius: 10px;
-           background-color: red;
-           color: white;
-           font-weight: bold;
-           text-decoration: none;
-           margin-top: 200px;
+      a{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 20px;
+        border: 3px solid black;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+       }
+       .tombol-rafli{
+        text-align: center;
+           background-color: cadetblue;
+       }
+       .tombol-cyan{
+         background-color: brown;
        }
       
 
@@ -42,6 +54,8 @@
 
     /* Cyan start */
       .cyan{
+        display: flex;
+        justify-content: center;
         background-color: cadetblue;
       }
 
@@ -53,15 +67,13 @@
   <div class="wrapper">
     <div class="rafli">
       <!-- Rafli start -->
-      <a class="tombol" href="rafli/Belajar7.html">Click !</a>
+      <a class="tombol-rafli" href="rafli/Belajar7.html">Rafli Click !</a>
       <!-- Rafli end -->
     </div>
     <!-- ======================= -->
     <div class="cyan">
       <!-- Cyan start -->
-
-
-
+      <a class="tombol-cyan" href="cyan/cyan_personal_page/index.html">Cyan Click!</a>
       <!-- Cyan end -->
     </div>
   </div>

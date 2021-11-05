@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(27, 27, 49);
+}
+
+/* Navbar Styling */
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+
+    background-color: rgb(41, 41, 80);
+    height: 80px;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.navbar a{
+    color: rgb(157, 233, 233);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.navbar a:hover{
+    color: rgb(98, 173, 173);
+}
+.nav-title{
+    margin-left: 30px;
+    font-size: 40px;
+}
+.nav-menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-right: 30px;
+    font-size: 20px;
+}
+.nav-menu > .nav-link a{
+    margin-right: 10px;
+}
+.nav-link{
+    display: none;
+}
+.mobile-menu{
+    color: rgb(157, 233, 233);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Content Flex*/
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+/* Profile Styling */
+.card-profile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 20%;
+    padding: 10px;
+    margin-right: 20px; 
+
+    cursor: pointer;
+    border: 1px solid rgb(157, 233, 233);
+    border-radius: 10px;
+    background-color: rgb(18, 18, 36);
+    transition: all 0.8s;
+}
+.card-profile:hover{
+    background-color: rgb(9, 9, 20);
+    box-shadow: 3px 5px 10px rgb(157, 233, 233);
+}
+.card-img{
+    position: relative;
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+}
+.card-img > img{
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.description{
+    color: rgb(157, 233, 233);
+}
+
+/* Skillbar Styling */
+.skillbar{
+    width: 70%;
+    padding: 10px;
+
+    border: 1px solid rgb(157, 233, 233);
+    border-radius: 10px;
+    color: rgb(157, 233, 233);
+}
+.skillbar-title{
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.skill-box{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+    padding: 1px 10px;
+    margin: 7px;
+    border: 1px solid rgb(157, 233, 233);
+}
+.skill{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+@media screen and (min-width: 767px){
+    .mobile-menu{
+        display: none;
+    }
+    .nav-link{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1023px){
+    .mobile-menu{
+        display: none;
+    }
+    .nav-link{
+        display: block;
+    }
+}
