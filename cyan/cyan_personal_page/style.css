@@ -2,11 +2,11 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(27, 27, 49);
 }
 
-/* Navbar Styling */
+/* Navbar Styling Start*/
 .navbar{
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +31,7 @@ body{
 }
 .nav-title{
     margin-left: 30px;
-    font-size: 40px;
+    font-size: 30px;
 }
 .nav-menu{
     display: flex;
@@ -51,34 +51,30 @@ body{
     font-size: 25px;
     font-weight: bold;
 }
+/* Navbar STyling End */
 
-/* Content Flex*/
+/* Content Flex Start*/
 .flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 100px;
 }
+/* Content Flex End */
 
-/* Profile Styling */
+/* Profile Styling Start*/
 .card-profile{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    width: 20%;
+    width: 90%;
     padding: 10px;
-    margin-right: 20px; 
+    margin-bottom: 20px;
 
-    cursor: pointer;
     border: 1px solid rgb(157, 233, 233);
     border-radius: 10px;
     background-color: rgb(18, 18, 36);
-    transition: all 0.8s;
-}
-.card-profile:hover{
-    background-color: rgb(9, 9, 20);
-    box-shadow: 3px 5px 10px rgb(157, 233, 233);
 }
 .card-img{
     position: relative;
@@ -95,46 +91,268 @@ body{
 }
 .description{
     color: rgb(157, 233, 233);
+    text-align: center;
 }
+/* Profile Styling End */
 
-/* Skillbar Styling */
-.skillbar{
-    width: 70%;
-    padding: 10px;
+/* Skillbar Styling Start*/
+.skillbar-box{
+    width: 90%;
+    padding: 5px 10px;
 
     border: 1px solid rgb(157, 233, 233);
     border-radius: 10px;
     color: rgb(157, 233, 233);
 }
-.skillbar-title{
-    font-size: 1.8em;
+.skillbar-box > h2{
+    font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
 }
-.skill-box{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-
-    padding: 1px 10px;
-    margin: 7px;
-    border: 1px solid rgb(157, 233, 233);
-}
 .skill{
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5px;
+}
+.skillbar{
+    position: relative;
+    border: 1px solid rgb(157, 233, 233);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.skillbar div{
+    position: relative;
+    width: 0%;
+    height: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(157, 233, 233), rgb(46, 93, 221));
+}
+/* Skillbar Styling End */
+
+/* Card Styling Start */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 5px 0;
+    width: 95%;
+    margin: 20px 0;
+
+    border: 1px solid rgb(157, 233, 233);
+    border-radius: 10px;
+    color: rgb(157, 233, 233);
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 95%;
+    margin: 10px;
+
+    cursor: pointer;
+    border: 1px solid rgb(157, 233, 233);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.card:hover{
+    transform: translateY(-0.5%);
+    box-shadow: 3px 5px 5px rgb(157, 233, 233);
+    background-color: rgb(9, 9, 20);
+}
+.card > .card-image{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid rgb(157, 233, 233);
+}
+.card-content{
+    padding: 0 10px 10px 10px;
+}
+.card-link{
+    display: block;
+    width: 50px;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: rgb(157, 233, 233);
+    background-color: rgb(41, 41, 80);
+    border: 1px solid rgb(157, 233, 233);
+    border-radius: 5px;
+}
+.card-link:hover{
+    color: rgb(98, 173, 173);
+    background-color: rgb(26, 26, 49);
+}
+/* Card Styling End */
+
+/* Footer Styling Start */
+.footer{
+    width: 100%;
+    height: 150px;
+    color: rgb(157, 233, 233);
+    background-color: rgb(9, 9, 20);
+}
+.footer-content > h3{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+}
+.footer-content .icon{
+    display: block;
+    text-align: center;
+}
+.icon a{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(157, 233, 233);
+}
+.icon a:hover{
+    color: rgb(98, 173, 173);
+}
+/* Footer Styling End */
+
+/* animation skill-bar start*/
+
+/* 1st animation */
+#one-bar{
+    animation: animaone 2.5s forwards;
+}
+@keyframes animaone{
+    100%{
+        width: 95%;
+    }
 }
 
+/* 2nd animation */
+#two-bar{
+    animation: animatwo 2.5s forwards;
+}
+@keyframes animatwo{
+    100%{
+        width: 88%;
+    }
+}
 
+/* 3rd animation */
+#three-bar{
+    animation: animathree 2.5s forwards;
+}
+@keyframes animathree{
+    100%{
+        width: 80%;
+    }
+}
 
+/* 4th animation */
+#four-bar{
+    animation: animafour 2.5s forwards;
+}
+@keyframes animafour{
+    100%{
+        width: 53%;
+    }
+}
+
+/* 5th animation */
+#five-bar{
+    animation: animafive 2.5s forwards;
+}
+@keyframes animafive{
+    100%{
+        width: 97%;
+    }
+}
+
+/* 6th animation */
+#six-bar{
+    animation: animasix 2.5s forwards;
+}
+@keyframes animasix{
+    100%{
+        width: 72%;
+    }
+}
+
+/* 7th animation */
+#seven-bar{
+    animation: animaseven 2.5s forwards;
+}
+@keyframes animaseven{
+    100%{
+        width: 69%;
+    }
+}
+
+/* 8th animation */
+#eight-bar{
+    animation: animaeight 2.5s forwards;
+}
+@keyframes animaeight{
+    100%{
+        width: 62%;
+    }
+}
+
+/* 9th animation */
+#nine-bar{
+    animation: animanine 2.5s forwards;
+}
+@keyframes animanine{
+    100%{
+        width: 70%;
+    }
+}
+
+/* 10th animation */
+#ten-bar{
+    animation: animaten 2.5s forwards;
+}
+@keyframes animaten{
+    100%{
+        width: 58%;
+    }
+}
+
+/* animation skill-bar end */
 
 @media screen and (min-width: 767px){
+    .nav-title{
+        font-size: 40px;
+    }
     .mobile-menu{
         display: none;
     }
     .nav-link{
         display: block;
+    }
+    .card-profile{
+        width: 30%;
+        margin-right: 20px; 
+    }
+    .skillbar-box{
+        width: 55%;
+        padding: 0 10px;
+    }
+    .cards{
+        width: 93%;
+    }
+    .card{
+        width: 45%;
+    }
+    .footer{
+        height: 150px;
+    }
+    .icon a{
+        font-size: 2rem;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
 
@@ -144,5 +362,27 @@ body{
     }
     .nav-link{
         display: block;
+    }
+    .card-profile{
+        width: 20%;
+        margin-right: 20px;     
+    }
+    .skillbar-box{
+        width: 70%;
+        padding: 5px 15px;
+    }
+    .cards{
+        width: 95%;
+    }
+    .card{
+        width: 30%;
+    }
+    .footer{
+        height: 200px;
+    }
+    .icon a{
+        font-size: 3rem;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
