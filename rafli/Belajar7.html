@@ -45,22 +45,11 @@
             justify-content: right;
             text-decoration: none;
         }
-        header > img
-        {
-            margin-top: 20px;
-            margin-left: 60px;
-            margin-right: 50px;
-        }
+       
         header, p
         {
             margin-bottom: 10px;
             margin-right: 40px;
-            
-        }
-       
-        article > p
-        {
-            text-align: center;
             
         }
         img
@@ -70,16 +59,7 @@
             border-radius: 20px;
             border: 2px solid black;
         }
-        footer
-        {
-            text-align: center;
-            padding-top: 8px;
-        }
-    
-        article
-        {
-            text-align: center;
-        }
+       
         header
         {
             text-align: center;
@@ -90,7 +70,7 @@
             margin: 1em auto;
             border: 3;
         }
-        .me
+        .about-me
         {
             justify-content: center;
             margin-top:5px;
@@ -123,20 +103,82 @@
             justify-content: center;
         }
     
-    
+        @media screen and (min-width: 319px)
+    {
+        h2
+        {
+            font-size: 18px;
+        }
+        img
+        {
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            border: 2px solid black;
+        }
+        .grow
+        {
+            margin-left: 40px;
+            justify-content: center;
+        }
+        .grow > p
+        {
+            text-align: center;
+            margin-left: 40px ;
+        }
+
+        article > h2
+        {
+            text-align: left;
+            margin-left: 100px;
+            margin-top: 5px;    
+        }
+        article > p
+        {
+            margin-left: 30px;
+            text-align: left;
+        }
+        article
+        {
+            text-align: justify;
+            padding-left: 40px;
+        }
+        footer
+        {
+            text-align: center;
+            padding-top: 28px;
+            padding-left: 25px;
+        }
+    }
+
 
     @media screen and (min-width: 1023px)
     {
-     .me
+        
+     .about-me
       {
          text-align: justify;
-         margin-left: 250px;
+         margin-left: 200px;
          margin-top: 5px;
       }
+      img
+        {
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+            border: 2px solid black;
+        }
       .grow
       {
           justify-content: center;
-          margin-left: 230px;
+          margin-left: 250px;
+      }
+      article > h2
+      {
+          
+          margin-top: 10px;
+          text-align: center;
+          margin-left: 10px;
       }
       table
       {
@@ -145,44 +187,17 @@
       }
       .NB
       {
-          margin-left: 45px;
+          margin-left: 30px;
       }
-      footer > p
-      {
-          justify-content: center;
-      }
-    }
-    @media only screen and (min-width: 1199px) 
-    {
-        .grow
-      {
-          justify-content: center;
-          margin-left: 380px;
-      }
-      .me
-      {
-         text-align: justify;
-         margin-left: 280px;
-         margin-top: 5px;
-      }
-       article
-        {
+     footer
+     {
             text-align: center;
-            margin-left: 80px;
-        }
-      .NB
-      {
-        margin-left: 35px;
-      }
-      footer > p
-      {
-          justify-content: center;
-          margin-left: 100px;
-      }
+            padding-top: 10px;
+            margin-left: 50px;
+     }
+
+       
     }
-
-
-
     </style>
 </head>
 
@@ -208,7 +223,7 @@
     <hr />
     <article>
         <h2> About Me</h2>
-        <div class="me">
+        <div class="about-me">
             <p>Saya Lulusan Cisco Academy Tahun 2020. Saya berpengalaman dalam riset teknologi, serta saya aktif dalam kegiatan Badan Riset Nasional Indonesia Bidang Teknologi Informasi ( Bidang Vokasi Terapan).</p>
         </div>
         <br>
