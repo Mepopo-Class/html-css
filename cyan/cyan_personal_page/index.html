@@ -6,73 +6,233 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Profile</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 </head>
 <body>
     <div class="navbar">
-        <a href="index.html" class="nav-title">CYAN'AP</a>
+        <a href="../../index.html" class="nav-title">CYAN ID</a>
         <div class="nav-menu">
             <div class="mobile-menu">
                 &#8285;
             </div>
             <div class="nav-link">
-                <a href="">Profile</a>
-                <a href="">Description</a>
-                <a href="">Skill</a>
+                <a href="#profile">Profile</a>
+                <a href="#skill">Skill</a>
+                <a href="#task">Task</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </div>
 
     <div class="flex">
-        <div class="card-profile">
+
+        <!-- Profile-Start -->
+        <div class="card-profile" id="profile">
             <div class="card-img">
                 <img src="../img/img1.png" alt="foto profil">
             </div>
             <div class="description">
-                <p>Christyan Anugerah Pamungkas<br>Sekolah di SMKN 2 Surabaya<br>Kelas XII, Jurusan <abbr title="Sistem Informatika Jaringan dan Aplikasi">SIJA</abbr>, Absen 10<br>Beralamat di Bandarejo 03/24</p>
+                <p>Nama Saya Christyan Anugerah Pamungkas<br>Saya Sekolah di SMKN 2 Surabaya<br>Kelas XII, Jurusan SIJA (Sistem Informatika Jaringan dan Aplikasi), Absen 10<br>Rumah Saya di Bandarejo 03/24<br>Saya mengikuti Mepopo Class, diwebsite ini Saya menampilkan progress Saya serta tugas-tugas Saya selama mengikuti Mepopo Class</p>
             </div>
         </div>
+        <!-- Profile-End -->
 
-        <div class="skillbar">
-            <div class="skillbar-title">SKILL-BAR</div>
-
-            <div class="skill-box">
-                <div class="skill">HTML Dasar <span id="one">95%</span></div>
+        <!-- Skillbar-Start -->
+        <div class="skillbar-box" id="skill">
+            <h2>Skillbar</h2>
+            <div class="skills">
+                <div class="skill">
+                    <span>HTML Dasar</span>
+                    <span>95%</span>
+                </div>
+                <div class="skillbar">
+                    <div id="one-bar"></div>
+                </div>
             </div>
 
-            <div class="skill-box">
-                <div class="skill">Selector dan CSS Dasar <span id="two">90%</span></div>
+            <div class="skills">
+                <div class="skill">
+                    <span>Selector dan CSS Dasar</span>
+                    <span>88%</span>
+                </div>
+                <div class="skillbar">
+                    <div id="two-bar"></div>
+                </div>
             </div>
 
-            <div class="skill-box">
-                <div class="skill">CSS Dasar <span id="three">87%</span></div>
+            <div class="skills">
+                <div class="skill">
+                    <span>CSS Dasar</span>
+                    <span>80%</span>
+                </div>
+                <div class="skillbar">
+                    <div id="three-bar"></div>
+                </div>
             </div>
 
-            <div class="skill-box">
-                <div class="skill">CSS Flex <span id="four">71%</span></div>
+            <div class="skills">
+                <div class="skill">
+                    <span>CSS Flex</span>
+                    <span>53%</span>
+                </div>
+                <div class="skillbar">
+                    <div id="four-bar"></div>
+                </div>
             </div>
 
-            <div class="skill-box">
-                <div class="skill">Path and Image <span id="five">92%</span></div>
+            <div class="skills">
+                <div class="skill">
+                    <span>Path and Image</span>
+                    <span>97%</span>
+                </div>
+                <div class="skillbar">
+                    <div id="five-bar"></div>
+                </div>
             </div>
 
-            <div class="skill-box">
-                <div class="skill">Working with Image <span id="six">75%</span></div>
+            <div class="skills">
+                <div class="skill">
+                    <span>Working with Image</span>
+                    <span>72%</span>
+                </div>
+                <div class="skillbar">
+                    <div id="six-bar"></div>
+                </div>
             </div>
 
-            <div class="skill-box">
-                <div class="skill">Position <span id="seven">80%</span></div>
+            <div class="skills">
+                <div class="skill">
+                    <span>Position</span>
+                    <span>69%</span>
+                </div>
+                <div class="skillbar">
+                    <div id="seven-bar"></div>
+                </div>
             </div>
 
-            <div class="skill-box">
-                <div class="skill">Pseudo Class <span id="eight">65%</span></div>
+            <div class="skills">
+                <div class="skill">
+                    <span>Pseudo Class</span>
+                    <span>62%</span>
+                </div>
+                <div class="skillbar">
+                    <div id="eight-bar"></div>
+                </div>
             </div>
 
-            <div class="skill-box">
-                <div class="skill">Media Queries <span id="nine">80%</span></div>
+            <div class="skills">
+                <div class="skill">
+                    <span>Media Queries</span>
+                    <span>70%</span>
+                </div>
+                <div class="skillbar">
+                    <div id="nine-bar"></div>
+                </div>
             </div>
 
-            <div class="skill-box">
-                <div class="skill">Advanced Sizing <span id="ten">69%</span></div>
+            <div class="skills">
+                <div class="skill">
+                    <span>Advanced Sizing</span>
+                    <span>58%</span>
+                </div>
+                <div class="skillbar">
+                    <div id="ten-bar"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Skillbar-End -->
+
+        <!-- Card-Start -->
+        <div class="cards" id="task">
+            <div class="card">
+                <img class="card-image" src="../img/task1_ss.png" alt="task1">
+                <div class="card-content">
+                    <h4 class="card-header">Task 1</h4>
+                    <p class="card-text">
+                        Tugas ini tentang membuat form HTML
+                    </p>
+                    <a href="../html-css_task/task1_cyan_form.html" class="card-link">Go <span>&rarr;</span></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../img/task2_ss.png" alt="task2">
+                <div class="card-content">
+                    <h4 class="card-header">Task 2</h4>
+                    <p class="card-text">
+                        Tugas 2 ini membuat box selector.
+                    </p>
+                    <a href="../html-css_task/task2_cyan_form.html" class="card-link">Go <span>&rarr;</span></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../img/task3_ss.png" alt="task3">
+                <div class="card-content">
+                    <h4 class="card-header">Task 3</h4>
+                    <p class="card-text">
+                        Tugas 3 membuat 3 box dengan display flex.
+                    </p>
+                    <a href="../html-css_task/task3_cyan_form.html" class="card-link">Go <span>&rarr;</span></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../img/task4_ss.png" alt="task4">
+                <div class="card-content">
+                    <h4 class="card-header">Task 4</h4>
+                    <p class="card-text">
+                        Tugas 4 membuat web mini dengan flex.
+                    </p>
+                    <a href="../html-css_task/task4_cyan_flex/task_flex_cyan.html" class="card-link">Go <span>&rarr;</span></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../img/task5_ss.png" alt="task5">
+                <div class="card-content">
+                    <h4 class="card-header">Task 5</h4>
+                    <p class="card-text">
+                        Tugas 5 tentang image manipulation kocheng.
+                    </p>
+                    <a href="../html-css_task/task5_cyan_img_manipulation/task5_cyan.html" class="card-link">Go <span>&rarr;</span></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../img/task6_ss.png" alt="task6">
+                <div class="card-content">
+                    <h4 class="card-header">Task 6</h4>
+                    <p class="card-text">
+                        Tugas 6 tentang image manipulation + navbar.
+                    </p>
+                    <a href="../html-css_task/task6_cyan_position_pseudo/task6_cyan.html" class="card-link">Go <span>&rarr;</span></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../img/task7_ss.png" alt="task7">
+                <div class="card-content">
+                    <h4 class="card-header">Task 7</h4>
+                    <p class="card-text">
+                        Tugas 7 tentang Media Queries untuk responsive website.
+                    </p>
+                    <a href="../html-css_task/task7_cyan_media_query/task7_cyan.html" class="card-link">Go <span>&rarr;</span></a>
+                </div>
+            </div>
+        </div>
+        <!-- Card-End -->
+    </div>
+
+    <div class="footer" id="contact">
+        <div class="footer-content">
+            <h3>Contact Me</h3>
+            <div class="icon">
+                <a href="https://wa.me/6289514756037"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/christyan.mech"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/christyanmech"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:christyananugrah2801@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/Christyan-Cyan?tab=repositories"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </div>

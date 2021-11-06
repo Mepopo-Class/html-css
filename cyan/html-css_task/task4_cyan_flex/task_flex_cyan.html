@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 3</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(27, 27, 49);
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 2rem;
+            margin-bottom: 2%;
+            background-color: rgb(41, 41, 80);
+        }
+        .navbar a{
+            text-decoration: none;
+            color: rgb(157, 233, 233);
+            transition: all 0.5s ease 0s;
+        }
+        .navbar a:hover{
+            color: rgb(98, 173, 173);
+        }
+        .navbar #judul-navbar{
+            font-size: 2.5rem;
+        }
+        .linknav li{
+            list-style: none;
+            display: inline-block;
+            font-size: 1.2rem;
+            padding: 0 20px;
+        }
+        .flexbox{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 5%;
+        }
+        .box{
+            color: rgb(157, 233, 233);
+            background-color: rgb(41, 41, 80);
+            width: 48%;
+            height: 300px;
+            margin: 4px;
+        }
+        .box >h3{
+            padding: 0 5px 5px 5px;
+            border-bottom: 1px solid rgb(157, 233, 233);
+        }
+        .box > div{
+            padding: 0 5px 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="task_flex_cyan.html" id="judul-navbar">Navbar</a>
+        <div class="linknav">
+            <ul>
+                <li><a href="task_flex_cyan.html">Home</a></li>
+                <li><a href="about_flex.html">About</a></li>
+                <li><a href="services_flex.html">Services</a></li>
+                <li><a href="contact_flex.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="flexbox">
+        <div class="box">
+            <h3>Paragraph 1</h3>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam esse autem, officia exercitationem laborum mollitia distinctio dicta vero aliquid expedita! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, corrupti!</p>
+            </div>
+        </div>
+    
+        <div class="box">
+            <h3>Paragraph 2</h3>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem laborum deserunt autem sed, laudantium quae est debitis accusamus. Rem, veniam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, placeat.</p>
+            </div>
+        </div>
+    
+        <div class="box">
+            <h3>Paragraph 3</h3>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam explicabo recusandae dicta id ullam voluptatum veritatis impedit esse facere dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, placeat.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Paragraph 4</h3>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam explicabo recusandae dicta id ullam voluptatum veritatis impedit esse facere dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, placeat.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

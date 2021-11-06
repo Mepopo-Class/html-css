@@ -1,0 +1,208 @@
+<!-- Media Query -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries</title>
+  <style>
+    body{
+      margin: 0;
+      height: 5000px;
+    }
+
+    /* ===== Navbar ===== */
+    .navbar{
+      font-family: Arial, Helvetica, sans-serif;
+      color: azure;
+      background: rgb(66, 66, 66);
+      height: 80px;      
+
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+
+      position: fixed;
+      top: 0;
+      z-index: 20;      
+      width: 100%;
+    }
+    .nav-title{
+      color: azure;
+      text-decoration: none;
+      font-size: 30px;
+      font-style: italic;
+      margin-left: 20px;
+    }
+    .nav-menu{
+      margin-left: auto;
+      margin-right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+    }
+    .nav-menu a{
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 18px;
+      transition: color 0.2s;
+    }
+    .nav-menu a:hover{
+      color: steelblue;
+    }
+    .link{
+        display: none;
+    }
+    .nav-menu-mobile{
+        font-size: 30px;
+    }
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 90px;
+    }
+    .card{
+        position: relative;
+        color: white;
+        margin: 10px;
+        width: 90%;
+        height: 250px;
+    }
+    .card > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    .cover{
+        position: absolute;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: background-color 0.5s;
+    }
+    .card:hover > .cover{
+        background-color: rgba(0, 0, 0, 0.363);
+    }
+    .label{
+        position: absolute;
+        padding: 3px 12px;
+        margin: 10px;
+        background-color: rgb(96, 192, 221);
+        border-radius: 5px;
+        top: 0;
+        right: 0;
+    }
+    .title{
+        position: absolute;
+        width: 100%;
+        padding: 3px 0 3px 0;
+        background-color: rgb(96, 192, 221);
+        bottom: 0;
+        left: 0;
+    }
+
+    @media screen and (min-width: 767px){
+        .nav-title{
+            margin-left: 80px;
+        }
+        .nav-menu{
+            margin-right: 80px;
+        }
+        .link{
+            display: block;
+        }
+        .nav-menu-mobile{
+            display: none;
+        }
+        .card{
+            width: 45%;
+        }
+    }
+    @media screen and (min-width: 1023px){
+        .link{
+            display: block;
+        }
+        .nav-menu-mobile{
+            display: none;
+        }
+        .card{
+            width: 20%;
+            height: 200px;
+        }
+    }
+  </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#" class="nav-title">Cat Shop</a>
+        <div class="nav-menu">
+            <div class="nav-menu-mobile">
+                &#8285;
+            </div>
+            <div class="link">
+                <a href="#">Home</a>
+                <a href="#">Product</a>
+                <a href="#">Contact</a>
+            </div>
+        </div> 
+    </div>
+
+    <div class="flex">
+        <div class="card">
+            <img src="../img/cat1.jpg" alt="begula">
+            <div class="cover">
+                <div class="label">
+                    $40
+                </div>
+                <div class="title">
+                    Some Product
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../img/cat1.jpg" alt="begula">
+            <div class="cover">
+                <div class="label">
+                    $40
+                </div>
+                <div class="title">
+                    Some Product
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../img/cat1.jpg" alt="begula">
+            <div class="cover">
+                <div class="label">
+                    $40
+                </div>
+                <div class="title">
+                    Some Product
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../img/cat1.jpg" alt="begula">
+            <div class="cover">
+                <div class="label">
+                    $40
+                </div>
+                <div class="title">
+                    Some Product
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
