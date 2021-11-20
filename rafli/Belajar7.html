@@ -10,6 +10,10 @@
         {
             margin: 0;
         }
+
+        .text-center{
+            text-align: center;
+        }
         
         body
         {
@@ -49,7 +53,7 @@
         header, p
         {
             margin-bottom: 10px;
-            margin-right: 40px;
+            /* margin-right: 40px; */
             
         }
         img
@@ -75,8 +79,8 @@
             justify-content: center;
             margin-top:5px;
             text-align: justify;
-            margin-left: 20px;
-            margin-right: 20px;
+            /* margin-left: 20px;
+            margin-right: 20px; */
         }
         table > tr > th
         {
@@ -99,7 +103,7 @@
         }
         .grow
         {
-            margin-left: 50px;
+            /* margin-left: 50px; */
             justify-content: center;
         }
     
@@ -118,36 +122,34 @@
         }
         .grow
         {
-            margin-left: 40px;
+            /* margin-left: 40px; */
             justify-content: center;
         }
         .grow > p
         {
             text-align: center;
-            margin-left: 40px ;
+            /* margin-left: 40px ; */
         }
 
         article > h2
         {
-            text-align: left;
-            margin-left: 107px;
+            text-align: center;
             margin-top: 5px;    
         }
         article > p
         {
-            margin-left: 30px;
-            text-align: left;
+            text-align: center;
         }
         article
         {
             text-align: justify;
-            padding-left: 40px;
+            /* padding-left: 40px; */
         }
         footer
         {
             text-align: center;
             padding-top: 28px;
-            padding-left: 25px;
+            /* padding-left: 25px; */
         }
     }
 
@@ -157,8 +159,8 @@
         
      .about-me
       {
-         text-align: justify;
-         margin-left: 350px;
+         /* text-align: justify; */
+         /* margin-left: 350px; */
          margin-top: 5px;
       }
       img
@@ -171,29 +173,29 @@
       .grow
       {
           justify-content: center;
-          margin-left: 350px;
+          /* margin-left: 350px; */
       }
       article > h2
       {
           
           margin-top: 10px;
           text-align: center;
-          margin-left: 10px;
+          /* margin-left: 10px; */
       }
       table
       {
-          margin-left: 100px;
+          /* margin-left: 100px; */
           justify-content: center;
       }
       .NB
       {
-          margin-left: 50px;
+          /* margin-left: 50px; */
       }
      footer
      {
             text-align: center;
             padding-top: 10px;
-            margin-left: 50px;
+            /* margin-left: 50px; */
      }
 
        
@@ -221,15 +223,19 @@
     </header>
 
     <hr />
-    <article>
+    <article class="text-center">
         <h2> About Me</h2>
         <div class="about-me">
-            <p>Saya Lulusan Cisco Academy Tahun 2020. Saya berpengalaman dalam riset teknologi, serta saya aktif dalam kegiatan Badan Riset Nasional Indonesia Bidang Teknologi Informasi ( Bidang Vokasi Terapan).</p>
+            <p>
+                Saya Lulusan Cisco Academy Tahun 2020. Saya berpengalaman dalam riset teknologi, 
+                serta saya aktif dalam kegiatan Badan Riset Nasional Indonesia Bidang Teknologi 
+                Informasi ( Bidang Vokasi Terapan).
+            </p>
         </div>
         <br>
     </article>
     <div>
-        <table border="1">
+        <table border="1" style="margin: 0 auto;"> <!-- pakai margin: 0 auto; jika element memiliki width fixed -->
             <thead>
                 <tr>
                     <th>Keterampilan</th>
@@ -267,7 +273,8 @@
             </tbody>
         </table>
         <br>
-        <b><p class="NB">NB : Data diatas dapat dipertanggung jawabkan.</p></b>
+        <!-- cukup text-align: center; jika hanya mengcenter teks -->
+        <b><p class="NB text-center">NB : Data diatas dapat dipertanggung jawabkan.</p></b>
         
     </div>
 
